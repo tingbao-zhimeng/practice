@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<br lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <title>携程移动端案例</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4701939_mzob02lt4n.css">
+</head>
+
+<body>
+  <div class="allContent">
+    <!-- header 固定定位的头部 -->
+    <header class="search-box">
+      <div class="search-content">
+        <i class="iconfont icon-sousuo"></i>
+        <input type="text" placeholder="搜索:目的地/酒店/景点/航班号">
+      </div>
+    </header>
+    <!-- 导航栏 -->
+    <!-- 左侧导航栏 -->
+    <div class="allContent02">
+      <div class="navTotal">
+        <div class="nav-animate nav-animate-left">
+          <ul class="nav-list">
+            <li class="nav-item nav-hotel">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/hotel.fc17d0f7726132bf2459621923704f0f.png"
+                alt="">
+              <span>酒店</span>
+            </li>
+            <li class="nav-item nav-hotel">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/hotel_inn.cbccfdc8449dea7bf83171dfa7ea6f81.png"
+                alt="">
+              <span>民宿/客栈</span>
+            </li>
+            <li class="nav-item nav-hotel">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/food_v2.759e14ab287956e9925f669ec1ef2169.png"
+                alt="">
+              <span>美食</span>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item nav-flight">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight.2af1e1835a10709db9ad91702e30de35.png
+              " alt="">
+              <span>机票</span>
+            </li>
+            <li class="nav-item nav-flight">
+              <img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight_package.7485a98b650ea13917e3cdd36f3eda67.png"
+                alt="">
+              <span>机+酒</span>
+            </li>
+            <li class="nav-item nav-flight">
+              <img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/airport_transfer.fb8d923aefb7393a3485ebcde0888932.png"
+                alt="">
+              <span>接送机/包车</span>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item nav-train">
+              <img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/train_ticket.62fc76e6f4ffac3d2e4610c807f535bb.png"
+                alt="">
+              <span>火车票</span>
+            </li>
+            <li class="nav-item nav-train">
+              <img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight_package.7485a98b650ea13917e3cdd36f3eda67.png"
+                alt="">
+              <span>汽车/船票</span>
+            </li>
+            <li class="nav-item nav-train">
+              <img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/airport_transfer.fb8d923aefb7393a3485ebcde0888932.png"
+                alt="">
+              <span>租车</span>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item nav-vacation">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight.2af1e1835a10709db9ad91702e30de35.png
+              " alt="">
+              <span>旅游</span>
+            </li>
+            <li class="nav-item nav-vacation">
+              <img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight_package.7485a98b650ea13917e3cdd36f3eda67.png"
+                alt="">
+              <span>门票/活动</span>
+            </li>
+            <li class="nav-item nav-vacation">
+              <img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/airport_transfer.fb8d923aefb7393a3485ebcde0888932.png"
+                alt="">
+              <span>周边游</span>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li class="nav-item nav-gs">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/gs.24c525633ba91ad0a2c41ff96773262b.png" alt="">
+              <span>攻略/景点</span>
+            </li>
+            <li class="nav-item nav-gs">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/shop.dba5be1f7b683690ea1d53bdd9ecef8f.png"
+                alt="">
+              <span>购物/免税</span>
+            </li>
+            <li class="nav-item nav-gs">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/finance.5cd5a7a955c6e5c633e6ae4e2b6cd551.png"
+                alt="">
+              <span>借钱/分期</span>
+            </li>
+          </ul>
+        </div>
+        <!-- 右侧导航栏 -->
+        <div class="nav-animate nav-animate-right">
+          <ul class="nav-list-right">
+            <li class="nav-right-item">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/hpgs_guide.c4c7aa66032ef995136fb5d92a1cc9da.png"
+                alt="">
+              <span>向导/包车</span>
+            </li>
+            <li class="nav-right-item">
+              <img src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/insurance.ec149a1dec5e6803f2b88290c99fa56c.png"
+                alt="">
+              <span>保险</span>
+            </li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/vtm.4b7ff6bddd0b21f3e92d1fa1ec41a0dc.png"
+                alt=""><span>微领队</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/oneday.4fac0806c732ddc0e37d56969f92d2f3.png"
+                alt=""><span>一日游</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/custom.56a6b6db26e37f09ebc593c1ac6d13c1.png"
+                alt=""><span>定制游</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/cruise.e66cd5e4d0759b090142a5f84c9d7896.png"
+                alt=""><span>游轮</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/exchange.17e163edbb0d53ee73743092dac0bba9.png"
+                alt=""><span>外币兑换</span></li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/visa.5f08517e1f62034f2abd06ca47d70559.png"
+                alt=""><span>签证</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/wifi.ac1863182c3866811836d375eb4d20e5.png"
+                alt=""><span>WiFi电话卡</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/lvpai.09b76db1c3e096b532ba90325c9dd0b9.png"
+                alt=""><span>旅拍·跟拍</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/flight_schedule.cef3ed6d45a8723efb4a95ec7d5312aa.png"
+                alt=""><span>航班助手</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/cost.1373427f7b26bd92ef1d413dbacdc096.png"
+                alt=""><span>拿去花</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/gift_card.8c7a17e90acc08bfa2bc5be10f9d4b5b.png"
+                alt=""><span>礼品卡</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/credit_card.eea3d6c0fb749362a6418cdbd24888f7.png"
+                alt=""><span>信用卡</span></li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/member.c5624f964f3892da2c01d996e5233007.png"
+                alt=""><span>会员/签到</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/supermember.fb6d01eb5298141f0bc572cd94154df1.png"
+                alt=""><span>超值旅行家</span></li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/rewards.c1302d78d8094c78a9768aa6b578dddb.png"
+                alt=""><span>会员商城</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/xiaoshiji.1c6588a11feef97907e952edcc4e5480.png"
+                alt=""><span>携程小诗机</span></li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/sos.20c13da52f8ff660f5b6807a799b03b3.png"
+                alt=""><span>紧急支援</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/cooperation.1f11ba99b09bfc288449ac23e253671a.png"
+                alt=""><span>加盟合作</span></li>
+            <li class="nav-right-item"><img
+                src="	https://ws-s.tripcdn.cn/modules/basebiz/h5home/mice.87b43913b744f893b4f9493986046f8f.png"
+                alt=""><span>会展旅游</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/corpctrip.02c3555f8f7609e02373ac87ce71e016.png"
+                alt=""><span>企业差旅</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/corpctrip.02c3555f8f7609e02373ac87ce71e016.png"
+                alt=""><span>Trip.com</span></li>
+            <li class="nav-right-item"><img
+                src="https://ws-s.tripcdn.cn/modules/basebiz/h5home/aria.9829d112261a461b876f0de6c348cb57.png"
+                alt=""><span>关怀版</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fengexian">
+        <div class="nav-switch">
+          <span class="nav-switch-item"></span>
+          <span class="nav-switch-item"></span>
+        </div>
+        <!--15个旅游相关选择 酒店 门票... 可以实现轮播 有两个页面 并且高度会自适应  -->
+        <div class="sub-banner">
+          <div class="banner">
+            <div class="banner-top">
+              <img class="title" src="https://images4.c-ctrip.com/target/0zc71120008g0ha4z93C6.png" alt="">
+              <span class="slogan-hotsale">特价好货直播中</span>
+            </div>
+            <div class="black-image">
+              <span class="tap">酒店套餐</span>
+              <img src="https://images4.c-ctrip.com/target/0201q1200086g80z3E212_D_280_280_R5.jpg" alt="">
+              <span class="proname">绿城千岛湖喜来登度假酒店2晚</span>
+            </div>
+            <div class="price">
+              ￥1190
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner02-top">
+              <img class="title" src="https://images4.c-ctrip.com/target/0zc6g120008g0hcb587E5.png" alt="">
+              <span class="slogan-hotsale">权威排行榜</span>
+            </div>
+            <div class="banner-bottom">
+              <div class="banner-left">
+                <div class="black-image">
+                  <span class="tap02">上海</span>
+                  <img src="https://images4.c-ctrip.com/target/0201q1200086g80z3E212_D_280_280_R5.jpg" alt="">
+                </div>
+                <div class="bangdan">
+                  周边奢华酒店榜
+                </div>
+              </div>
+              <div class="banner-right">
+                <div class="black-image">
+                  <span class="tap02">上海</span>
+                  <img src="https://images4.c-ctrip.com/target/0201q1200086g80z3E212_D_280_280_R5.jpg" alt="">
+                </div>
+                <div class="bangdan">
+                  奢华酒店榜
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- 优选好物 左右布局 特价直播 精选榜-->
+        <!-- 广告图 -->
+        <div class="bottom-banner">
+          <img src="https://dimg04.c-ctrip.com/images/0zg0p12000cz4eu861DA5.jpg" alt="">
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+          <div class="footer-top">
+            <div class="footer-left">
+              <span> <i class="iconfont icon-dianhua"></i>电话预约</span>
+            </div>
+            <div class="footer-right">
+              <span> <i class="iconfont icon-xiazai"></i>下载携程</span>
+            </div>
+          </div>
+          <div class="site-msg">
+            <div class="middle">
+              <div class="site">网站地图</div>
+              <div>电脑版</div>
+            </div>
+          </div>
+          <p class="footer-btm">2024携程旅行<span class="link-icp">沪ICP备08023580号</span></p>
+        </div>
+      </div>
+      <div class="fixed-nav">
+        <span><i class="iconfont icon-shouye"></i>首页</span>
+        <span><i class="iconfont icon-shequ-jihuo"></i>社区</span>
+        <span><i class="iconfont icon-xiaoxi"></i>消息</span>
+        <span><i class="iconfont icon-wode"></i>我的</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  // 获取导航元素
+  var navLeft = document.querySelector('.nav-animate-left')
+  var navRight = document.querySelector('.nav-animate-right')
+  var navTotal = document.querySelector('.navTotal')
+  var addActive = document.querySelector('.nav-switch')
+  var navSwitchItems = document.querySelectorAll('.nav-switch-item')
+  var fengexian = document.querySelector('.fengexian')
+
+  // 监听触摸事件
+  navTotal.addEventListener('touchstart', handleTouchStart, false)
+  navTotal.addEventListener('touchmove', handleTouchMove, false)
+  let startX, isDragging = false
+
+  function handleTouchStart (event) {
+    startX = event.touches[0].pageX
+    isDragging = true
+  }
+  function handleTouchMove (event) {
+    if (!isDragging) return
+
+    const currentX = event.touches[0].pageX
+    const diffX = currentX - startX
+    // 根据滑动方向更新 transform 属性
+    if (diffX > 0) { // 向右滑动
+      if (Math.abs(diffX) > 50) { // 设置一个阈值，例如50像素
+        showLeftNav()
+      }
+    } else { // 向左滑动
+      if (Math.abs(diffX) > 50) {
+        showRightNav()
+      }
+    }
+    // 阻止默认的触摸行为，如页面滚动
+    event.preventDefault()
+  }
+
+  function showLeftNav () {
+    navLeft.style.transform = 'translateX(0)'
+    navRight.style.transform = 'translateX(100%)'
+    addActive.style.marginTop = "0px"
+    fengexian.style.marginTop = "0px"
+
+    navSwitchItems.forEach(function (item) {
+      item.classList.remove('nav-switch-item-active')
+    })
+    navSwitchItems[0].classList.add('nav-switch-item-active')
+  }
+
+  function showRightNav () {
+    navLeft.style.transition = 'transform 0.3s ease-in-out, margin-top 0.3s ease-in-out'
+    navRight.style.transition = 'transform 0.3s ease-in-out'
+    fengexian.style.transition = 'margin-top 0.3s ease-in-out'
+    navLeft.style.transform = 'translateX(-100%)'
+    navRight.style.transform = 'translateX(0)'
+    navRight.style.display = "block"
+    // addActive.style.marginTop = "115px"
+    fengexian.style.marginTop = "115px"
+    navSwitchItems.forEach(function (item) {
+      item.classList.remove('nav-switch-item-active')
+    })
+    navSwitchItems[1].classList.add('nav-switch-item-active')
+  }
+
+  navSwitchItems.forEach(function (item) {
+    item.classList.remove('nav-switch-item-active')
+  })
+  navSwitchItems[1].classList.add('nav-switch-item-active')
+
+  navTotal.addEventListener('touchend', function () {
+    isDragging = false
+  }, false)
+</script>
+
+<!-- 
+  1. 固定定位以屏幕为准
+  2. 手机在屏幕上滑动时触发 
+ -->
+<!-- 
+
+
+  style="flex-direction: row; transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1); direction: ltr; display: flex; will-change: transform; transform: translate(0%, 0px);"
+
+  flex-direction: row; transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1); direction: ltr; display: flex; will-change: transform; transform: translate(-100%, 0px);
+  -->

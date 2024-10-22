@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+body,
+html {
+  font: normal 16px / 1.5 'PingFangSC-regular', Tahoma, 'Lucida Grande', Verdana,
+    'Microsoft Yahei', STXihei, hei;
+}
+body {
+  color: #000;
+  overflow-x: hidden;
+  /*  用户点击的时候的高亮颜色*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* 用于控制移动端设备旋转的时候文本大小是否自动调节 */
+  -webkit-text-size-adjust: none;
+  /* 用于控制用户是否选中页面上的文本--默认为none */
+  -moz-user-select: none;
+  max-width: 540px;
+  margin: 0 auto;
+  background: #f4f4f4;
+}
+.allContent {
+  width: 100%;
+  height: 100%;
+}
+.allContent02 {
+  position: relative;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+.search-box {
+  position: fixed;
+  width: 100%;
+  /* max-width: 540px; */
+  top: 0px;
+  left: 0px;
+  padding: 12px 12px 6px 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.search-content {
+  display: flex;
+  justify-content: flex-start;
+  height: 32px;
+  color: #666;
+  background-color: #fff;
+  border-radius: 16px;
+  font-size: 0.94rem;
+  align-items: center;
+  border: 1.8px solid #0086f6;
+  box-sizing: border-box;
+}
+.search-content .iconfont {
+  width: 20px;
+  height: 20px;
+  padding-left: 12px;
+  font-weight: bold;
+}
+.search-content input {
+  width: 210px;
+  outline: none;
+  border: 0px;
+  color: #666;
+}
+/* 导航栏 */
+.navTotal {
+  position: relative;
+  margin-top: 25px;
+}
+
+.nav-animate {
+  transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1);
+}
+.nav-animate-left {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 12px 2px 12px;
+  width: 95%;
+  left: 0;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.nav-list .nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  font-family: 'PingFangSC-Medium';
+  color: #333;
+}
+.nav-list .nav-hotel:first-child {
+  margin-bottom: 1px;
+  border-top-left-radius: 8px;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.nav-hotel img,
+.nav-flight img,
+.nav-train img,
+.nav-vacation img,
+.nav-gs img {
+  width: 28px;
+  height: 28px;
+  background-size: 28px auto;
+  margin-bottom: 4px;
+}
+
+.nav-list .nav-flight:first-child,
+.nav-list .nav-train:first-child,
+.nav-list .nav-vacation:first-child {
+  margin: 0 1px;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.nav-hotel {
+  background-color: #fff5f1;
+}
+.nav-hotel:first-child {
+  background-image: linear-gradient(180deg, #fa5956 0%, #fb8650 100%);
+}
+.nav-flight {
+  background-color: #eff9ff;
+}
+.nav-flight:first-child {
+  background-image: linear-gradient(180deg, #3c83fa 0%, #50b2fa 100%);
+}
+.nav-train {
+  background-color: #f2f5ff;
+}
+.nav-train:first-child {
+  background-image: linear-gradient(0deg, #66a4ff 0%, #5e80ff 100%);
+}
+.nav-vacation {
+  background-color: #ecfcf8;
+}
+.nav-vacation:first-child {
+  background-image: linear-gradient(180deg, #2fc3b6 0%, #52d9b3 100%);
+}
+.nav-gs {
+  background-color: #fff9f2;
+}
+.nav-list .nav-gs:first-child {
+  margin-bottom: 1px;
+  border-top-right-radius: 8px;
+  color: #fff;
+  background-image: linear-gradient(0deg, #ffa846 0%, #ff8939 99%);
+}
+/* 右侧导航栏 */
+.nav-animate-right {
+  padding: 6px 12px 0 12px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  background-color: #fff;
+  display: none;
+}
+.nav-list-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav-animate-right .nav-list-right .nav-right-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 20%;
+  height: 58px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #333;
+}
+.nav-animate-right .nav-list-right .nav-right-item img {
+  width: 28px;
+  height: 28px;
+}
+/* 导航栏切换 */
+.nav-switch {
+  width: 100%;
+  height: 20px;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 4px;
+  position: absolute;
+  margin-top: 6px;
+}
+.nav-switch .nav-switch-item:first-child {
+  margin-right: 4px;
+}
+.nav-switch .nav-switch-item {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ccc;
+}
+.nav-switch .nav-switch-item-active {
+  width: 14px;
+  background-color: #0086f6;
+  border-radius: 10px 0;
+}
+/* 特价直播--精选区域 */
+.sub-banner {
+  display: flex;
+  padding: 12px;
+  background-color: #f4f4f4;
+  margin-left: -8px;
+  margin-bottom: 10px;
+}
+.sub-banner .banner {
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  background-color: #fff;
+  width: 50%;
+  margin-left: 8px;
+  padding: 8px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.banner .banner-top {
+  height: 20px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.banner-top .title,
+.banner02-top .title {
+  width: 73px;
+  height: 20px;
+}
+.banner-top .slogan-hotsale {
+  color: #ff4607;
+  padding: 1px 4px;
+  border-radius: 2px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  background: #ffebe3;
+}
+.black-image {
+  position: relative;
+  height: 84px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.black-image .tap,
+.black-image .tap02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  font-size: 10px;
+  z-index: 10;
+  border-radius: 6px 0 6px 0;
+  padding: 0 3px;
+}
+.black-image .tap {
+  background-color: rgba(51, 51, 51, 8);
+  color: #fff;
+}
+.black-image .tap02 {
+  color: #663c00;
+  background-image: linear-gradient(270deg, #f8e1bd 0%, #e2c089 100%);
+}
+.black-image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.black-image .proname {
+  position: absolute;
+  border-radius: 6px 0 6px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  z-index: 10;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+}
+.price {
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff4607;
+  padding-right: 2px;
+}
+.banner .banner02-top {
+  height: 20px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.banner02-top .slogan-hotsale {
+  color: #ae6e15;
+  padding: 1px 4px;
+  border-radius: 2px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  background: #fdefd2;
+}
+.banner-bottom {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.banner-bottom .banner-left {
+  margin-right: 2px;
+}
+.banner-bottom .banner-left,
+.banner-bottom .banner-right {
+  width: 50%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bangdan {
+  font-size: 11px;
+}
+.bottom-banner {
+  display: flex;
+  padding: 0 12px 12px 12px;
+  margin-top: 10px;
+  width: 100%;
+  height: 101px;
+  overflow: hidden;
+}
+.bottom-banner img {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+/* 底部 */
+.footer {
+  height: 120px;
+  padding-top: 12px;
+  margin-bottom: 50px;
+}
+.footer .iconfont {
+  width: 13px;
+  height: 13px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 12px;
+}
+.footer-left,
+.footer-right {
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  border-radius: 4px;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #333;
+}
+
+.site-msg {
+  display: flex;
+  justify-content: center;
+  color: #666;
+}
+.site-msg .middle {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+  line-height: 15px;
+  font-size: 12px;
+}
+.site-msg .middle .site {
+  margin-right: 24px;
+  padding-right: 24px;
+}
+.footer-btm {
+  font-size: 10px;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.link-icp {
+  margin-left: 6px;
+}
+.fixed-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 49px;
+  background-color: #fff;
+  box-shadow: 0 -5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.fixed-nav span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #666;
+  font-size: 11px;
+  line-height: 12px;
+  width: 32px;
+  height: 32px;
+  background-size: 32px auto;
+  margin-top: 8px;
+}
+.fixed-nav span i {
+  padding-bottom: 12px;
+  font-size: 29px;
+}

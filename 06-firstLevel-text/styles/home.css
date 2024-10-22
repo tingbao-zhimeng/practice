@@ -1,0 +1,411 @@
+/* 使用rem实现移动端适配 */
+html {
+  font-size: 50px;
+}
+body {
+  font-size: 25rem;
+}
+/*
+①  设置常见的移动端屏幕尺寸  
+**/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+  body {
+    font-size: 10.66666667px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+  body {
+    font-size: 10.66666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+  body {
+    font-size: 25px;
+  }
+}
+/*通用样式**/
+* {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a,
+textarea,
+input,
+button {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+li,
+input,
+img,
+textarea,
+select {
+  vertical-align: middle;
+}
+.clears {
+  clear: both;
+  line-height: 0px;
+  overflow: hidden;
+  font-size: 0px;
+  height: 0px;
+}
+@font-face {
+  font-family: AliMedium;
+  src: url('../font/AlibabaPuHuiTi-2-65-Medium.ttf');
+}
+@font-face {
+  font-family: AliHeavy;
+  src: url('../font/AlibabaPuHuiTi-2-95-ExtraBold.ttf');
+}
+body {
+  background-color: #fff;
+  font-family: AliMedium;
+  overflow-x: hidden;
+}
+.homeBg {
+  width: 100vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.homeBg #main {
+  width: 99.9%;
+  height: 10.68rem;
+  overflow: hidden;
+}
+.homeBg #main #list {
+  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 45rem;
+  height: 10.68rem;
+  transition: left 500ms linear;
+}
+.homeBg #main #list li {
+  float: left;
+  width: 15rem;
+  height: 10.68rem;
+}
+.homeBg #main #list li .imgs01 {
+  width: 15rem;
+  height: 10.68rem;
+}
+.homeBg #main .index_container {
+  position: absolute;
+  top: 8.4rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 1.96rem;
+  height: 0.32rem;
+}
+.homeBg #main .index_container li {
+  width: 0.32rem;
+  height: 0.32rem;
+  opacity: 0.6;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+.homeBg #main .index_container .current {
+  background-color: #fff;
+}
+.homeBg #main #main_top {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 1.76rem;
+  height: 1.44rem;
+  margin: 0 auto;
+  width: 95%;
+  padding-left: 0.8rem;
+}
+.homeBg #main #main_top .topLeft {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.homeBg #main #main_top .topLeft span {
+  font-size: 0.56rem;
+  color: #fff2f2;
+}
+.homeBg #main #main_top .topLeft .down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  /* 左边框透明 */
+  border-right: 5px solid transparent;
+  /* 右边框透明 */
+  border-top: 5px solid #b89090;
+  /* 上边框为黑色 */
+  margin-left: 0.1rem;
+}
+.homeBg #main #main_top .topRight {
+  display: flex;
+  align-items: center;
+  width: 11.4rem;
+  height: 1.44rem;
+  border-radius: 0.72rem;
+  background: #f2f2f3;
+  opacity: 0.75;
+  outline: none;
+}
+.homeBg #main #main_top .topRight input {
+  width: 11.4rem;
+  height: 1.44rem;
+  border-radius: 0.72rem;
+  text-indent: 0.68rem;
+  border: none;
+  background: #f2f2f3;
+  opacity: 0.75;
+}
+.homeBg #main #main_top .topRight .iconfont {
+  padding-right: 0.3rem;
+}
+.homeBg #main .title01 {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #dadada;
+  left: 1.2rem;
+  top: 7.6rem;
+}
+.homeBg #wrap-content {
+  position: relative;
+  background-color: #fff;
+  top: -1.6rem;
+  width: 99.8%;
+  padding-top: 0.96rem;
+  border-top-left-radius: 0.8rem;
+  /* 设置左上角圆角半径为10px */
+  border-top-right-radius: 0.8rem;
+  /* 设置右上角圆角半径为5px */
+}
+.homeBg #wrap-content .content-nav {
+  height: 2.72rem;
+  width: 99.8%;
+}
+.homeBg #wrap-content .content-nav .nowrap-list {
+  display: flex;
+  justify-content: space-around;
+  width: 99.8%;
+}
+.homeBg #wrap-content .content-nav .nowrap-list li {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.42rem;
+  width: 1.36rem;
+  height: 1.36rem;
+  object-fit: cover;
+}
+.homeBg #wrap-content .content-nav .nowrap-list li img {
+  width: 1.36rem;
+  height: 1.36rem;
+  margin: 0 auto;
+}
+.homeBg #wrap-content .content-nav .nowrap-list li span {
+  font-size: 0.56rem;
+  color: #333333;
+  text-align: left;
+  vertical-align: top;
+  height: 0.8rem;
+  width: 2.32rem;
+}
+.homeBg #wrap-content .sel-list {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  height: 1.4rem;
+}
+.homeBg #wrap-content .sel-list span {
+  color: #808080;
+  text-align: center;
+  font-size: 0.72rem;
+}
+.homeBg #wrap-content .sel-list .current03 {
+  color: #ff8b26;
+  border-bottom: 2px solid #ff8b26;
+}
+.homeBg #wrap-content .user-need {
+  width: 95%;
+  height: 9.6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.homeBg #wrap-content .user-need .need-top {
+  margin-top: 0.64rem;
+  width: 100;
+  height: 1.76rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: bottom;
+}
+.homeBg #wrap-content .user-need .need-top .need-left {
+  display: flex;
+  justify-content: start;
+}
+.homeBg #wrap-content .user-need .need-top .need-left img {
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.homeBg #wrap-content .user-need .need-top .need-left .msg {
+  padding-left: 0.32rem;
+  display: flex;
+  flex-direction: column;
+}
+.homeBg #wrap-content .user-need .need-top .need-left .msg .username {
+  color: #333333;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.64rem;
+  height: 0.88rem;
+  width: 3.2rem;
+}
+.homeBg #wrap-content .user-need .need-top .need-left .msg .tag01 {
+  font-size: 0.48rem;
+  height: 0.68rem;
+  width: 3.72rem;
+  color: #cbcacc;
+}
+.homeBg #wrap-content .user-need .need-top .need-right {
+  color: #fff;
+  text-align: center;
+  width: 2.08rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  background: linear-gradient(135deg, #ffac1c 0%, #ff8317 100%);
+  border-radius: 0.56rem;
+}
+.homeBg #wrap-content .user-need .need-img {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.34rem 0;
+  width: 99.8%;
+  height: 4.36rem;
+}
+.homeBg #wrap-content .user-need .need-img img {
+  width: 4.36rem;
+  height: 4.36rem;
+  border-radius: 0.32rem;
+  transition: all 0.9s ease;
+  box-shadow: none;
+  transform: translateY(0);
+}
+.homeBg #wrap-content .user-need .need-img img:hover {
+  outline: none;
+  transition: all 0.9s;
+  box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.08rem);
+}
+.homeBg #wrap-content .user-need .introduce {
+  text-align: left;
+  color: #656566;
+  width: 13.68rem;
+  height: 1.76rem;
+  margin: 0 auto;
+  font-size: 0.56rem;
+}
+.homeBg #wrap-content .user-need .wrap-btm {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 0.34rem;
+}
+.homeBg #wrap-content .user-need .wrap-btm .bgc {
+  border-radius: 0.48rem;
+  background: rgba(234, 248, 246, 0.6);
+  width: 1.84rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #be9958;
+  text-align: center;
+}
+.homeBg #wrap-content .user-need .wrap-btm .wrap-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  color: #cbcacc;
+  width: 4.6rem;
+  height: 0.8rem;
+}
+.homeBg #wrap-content .user-need .wrap-btm .wrap-right .item {
+  display: flex;
+  align-items: center;
+}
+.homeBg .tabber {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 99.9%;
+  height: 2.16rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homeBg .tabber .tabber-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+.homeBg .tabber img {
+  width: 1.76rem;
+  height: 1.76rem;
+}
